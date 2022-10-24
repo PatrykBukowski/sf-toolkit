@@ -1,15 +1,14 @@
 {
   "name": "sf-toolkit",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "",
   "main": "index.js",
   "bin": {
     "sf-toolkit": "index.js",
-    "sfdk-difference": "./customLabelsDifferenceChecker/index.js"
+    "sfdk-difference": "./sfdk/difference.js"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node ./sfdk/difference.js"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
