@@ -1,11 +1,12 @@
 {
   "name": "sf-toolkit",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "",
   "main": "index.js",
   "bin": {
     "sf-toolkit": "index.js",
-    "sfdk-difference": "./sfdk/difference.js"
+    "sftk-diff": "./sfdk/difference.js",
+    "sftk-sort": "./sfdk/sort.js"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

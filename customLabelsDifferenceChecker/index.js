@@ -2,13 +2,8 @@ import {read, write} from "../utils/fs.js";
 import {build, parse} from '../utils/xml.js';
 import {templateAll, templateMain} from "../templates/index.js";
 import {difference, intersection} from "../sets/index.js";
-
-const args = process.argv;
-
-const flagger = (flag, def) => {
-  const flagKey = args.indexOf(flag);
-  return (flagKey > -1) ? args[flagKey + 1] || def : def
-}
+import {flagger} from "../utils/flagger.js";
+import xmlf from "../utils/xmlf.js";
 
 const CustomLabelDifferenceChecker = () => {
   const filename1 = flagger('-in1', 'file1.xml');
@@ -18,12 +13,7 @@ const CustomLabelDifferenceChecker = () => {
   const outputname2 = flagger('-o2', 'missingInA.xml');
   const outputname3 = flagger('-o3', 'missingInB.xml');
   const outputname4 = flagger('-o4', 'incorrect.xml');
-  Object.prototype.xmlf = function (value) {
-    if (Array.isArray(this)) return this.find(el => el.name === value)
-    let element = this.elements.find(el => el.name === value)
-    if (!element) element = this.elements.find(el => el.type === value);
-    return element
-  }
+  Object.prototype.xmlf = xmlf;
 
   const fileA = parse(read(filename1))
   const fileB = parse(read(filename2))
