@@ -1,0 +1,23 @@
+{
+  "name": "sf-toolkit",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PatrykBukowski/sf-toolkit.git"
+  },
+  "author": "Patryk Bukowski",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/PatrykBukowski/sf-toolkit/issues"
+  },
+  "homepage": "https://github.com/PatrykBukowski/sf-toolkit#readme",
+  "dependencies": {
+    "xml-js": "^1.6.11"
+  },
+  "type": "module"
+}
