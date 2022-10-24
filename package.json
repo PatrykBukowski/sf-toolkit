@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "bin": {
-    "sf-toolkit": "index.js"
+    "sf-toolkit": "index.js",
+    "sfdk-difference": "./customLabelsDifferenceChecker/index.js"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
