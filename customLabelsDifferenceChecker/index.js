@@ -1,3 +1,4 @@
+#!/usr/bin/env node
 import {read, write} from "../utils/fs.js";
 import {build, parse} from '../utils/xml.js';
 import {templateAll, templateMain} from "../templates/index.js";
