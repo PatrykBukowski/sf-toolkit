@@ -64,6 +64,10 @@ sf-toolkit -p dc -in1 org.xml -in2 repo.xml -o2 notInOrg.xml -o3 notInRepo.xml
 sftk-diff -in1 org.xml -in2 repo.xml
 ```
 
+## TODO
+
+[TODO Project Board](https://github.com/users/PatrykBukowski/projects/3/views/1)
+
 ## Licence
 
 MIT @ [Patryk Bukowski](https://github.com/PatrykBukowski)
