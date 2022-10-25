@@ -1,6 +1,6 @@
 {
   "name": "sf-toolkit",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "",
   "main": "index.js",
   "bin": {
@@ -9,7 +9,7 @@
     "sftk-sort": "./sfdk/sort.js"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js"
   },
   "repository": {
     "type": "git",
@@ -24,5 +24,8 @@
   "dependencies": {
     "xml-js": "^1.6.11"
   },
-  "type": "module"
+  "type": "module",
+  "devDependencies": {
+    "jest": "^29.2.2"
+  }
 }
