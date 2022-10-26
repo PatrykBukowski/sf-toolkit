@@ -13,7 +13,8 @@ const FLAGS = {
   DIFFERENCE_CHECKER_SHORT: 'dc',
   SORT: 'sortTool',
   SORT_SHORT_1: 'st',
-  SORT_SHORT_2: 'sort'
+  SORT_SHORT_2: 'sort',
+  PROFILE_SORT: 'pst',
 }
 
 const flagKey = args.indexOf(FLAG_PROGRAM)
