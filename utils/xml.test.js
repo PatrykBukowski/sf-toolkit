@@ -3,14 +3,14 @@ import {parse, build} from "./xml.js";
 const mockXml =
   `<?xml version="1.0" encoding="UTF-8"?>
 <CustomLabels xmlns="http://soap.sforce.com/2006/04/metadata">
-  <labels>
-    <fullName>ACCOUNT231</fullName>
-    <categories>ACCOUNT</categories>
-    <language>en_US</language>
-    <protected>false</protected>
-    <shortDescription>ACCOUNT</shortDescription>
-    <value>ACCOUNT</value>
-  </labels>
+    <labels>
+        <fullName>ACCOUNT231</fullName>
+        <categories>ACCOUNT</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>ACCOUNT</shortDescription>
+        <value>ACCOUNT</value>
+    </labels>
 </CustomLabels>`
 
 test('Xml to parse should return object', () => {
