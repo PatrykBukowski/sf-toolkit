@@ -1,4 +1,12 @@
 const templateMain = (value) => {
+  let elements;
+  if(Array.isArray(value)){
+    elements = value
+  }else if (typeof value === 'object'){
+    elements = [value]
+  }else{
+    elements = [];
+  }
   return {
     declaration: {
       attributes: {version: '1.0', encoding: 'UTF-8'}
@@ -6,7 +14,7 @@ const templateMain = (value) => {
       type: 'element',
       name: 'CustomLabels',
       attributes: {xmlns: 'http://soap.sforce.com/2006/04/metadata'},
-      elements: [...value]
+      elements: elements
     }]
   }
 }
