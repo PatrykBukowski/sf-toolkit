@@ -51,6 +51,29 @@ const sortHelp = () => {
   ].join('\n'))
 }
 
+const profileSortHelp = () => {
+  console.log([
+    '',
+    '###################',
+    '# PROFILE SORT TOOL #',
+    '###################',
+    '',
+    'sf-toolkit -p pst {params}',
+    'sftk-profilesort {params}',
+    '',
+    '## params',
+    '',
+    '1. -in - input file (default: Admin.profile-meta.xml)',
+    '2. -out - output file (default: Admin.profile-meta.xml)',
+    '',
+    '## examples',
+    '',
+    'sf-toolkit -p pst -in Admin.profile-meta.xml',
+    'sf-toolkit -p pst -out Customer.profile-meta.xml',
+    'sftk-profilesort -in input.xml -out output.xml'
+  ].join('\n'))
+}
+
 const help = () => {
   console.log([
     '',
@@ -58,15 +81,17 @@ const help = () => {
     '',
     '1. DIFFERENCE CHECKER',
     '2. LABEL SORT TOOL',
+    '3. PROFILE SORT TOOL',
     '',
     '# HOW TO USE',
   ].join('\n'))
 
   diffHelp();
   sortHelp();
+  profileSortHelp()
 
 }
 
 
 export default help;
-export {diffHelp, sortHelp}
+export {diffHelp, sortHelp, profileSortHelp}

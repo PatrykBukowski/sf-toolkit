@@ -1,6 +1,6 @@
 {
   "name": "sf-toolkit",
-  "version": "1.0.13",
+  "version": "1.1.0",
   "description": "Some tools to help working with files on the salesforce",
   "main": "index.js",
   "keywords": [
@@ -11,7 +11,8 @@
   "bin": {
     "sf-toolkit": "index.js",
     "sftk-diff": "./sfdk/difference.js",
-    "sftk-sort": "./sfdk/sort.js"
+    "sftk-sort": "./sfdk/sort.js",
+    "sftk-profilesort": "./sfdk/profileSort.js"
   },
   "scripts": {
     "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js"
