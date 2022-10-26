@@ -3,6 +3,7 @@
 import CustomLabelDifferenceChecker from './customLabelsDifferenceChecker/index.js';
 import help from "./help/index.js";
 import LabelSortTool from "./labelSortTool/index.js";
+import ProfileSortingTool from "./profileSortingTool/index.js";
 
 const args = process.argv;
 
@@ -31,6 +32,9 @@ if (flagKey > -1) {
     case FLAGS.SORT_SHORT_1:
     case FLAGS.SORT_SHORT_2:
       LabelSortTool();
+      break;
+    case FLAGS.PROFILE_SORT:
+      ProfileSortingTool();
       break;
     default:
       console.log('Wrong program');

@@ -16,7 +16,7 @@ const build = (obj) => {
     if (typeof obj === 'string' || obj instanceof String) throw Error('Param cannot be a string')
     if (typeof obj === 'number') throw Error('Param cannot be a number');
     if (Array.isArray(obj)) throw Error('Param cannot be an array')
-    return js2xml(obj, {spaces: 2});
+    return js2xml(obj, {spaces: 4});
   } catch (error) {
     throw new Error('Wrong value passed', {cause: error})
   }
