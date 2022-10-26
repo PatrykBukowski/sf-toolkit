@@ -1,8 +1,13 @@
 {
   "name": "sf-toolkit",
-  "version": "1.0.12",
-  "description": "",
+  "version": "1.0.13",
+  "description": "Some tools to help working with files on the salesforce",
   "main": "index.js",
+  "keywords": [
+    "salesforce",
+    "metadata",
+    "sfdx"
+  ],
   "bin": {
     "sf-toolkit": "index.js",
     "sftk-diff": "./sfdk/difference.js",
