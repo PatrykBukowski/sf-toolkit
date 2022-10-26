@@ -37,7 +37,3 @@ test('Xmlf should correctly find type when elements are not available', () => {
   expect(result).not.toBeNull()
   expect(typeof result).toBe('string')
 })
-
-test('fail test', () => {
-  expect(true).toBe(false)
-})
