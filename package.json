@@ -15,9 +15,9 @@
     "sftk-profilesort": "src/sfdk/profileSort.js"
   },
   "scripts": {
-    "pre-test": "npm run transpile",
-    "transpile": "babel --no-babelrc",
-    "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js"
+    "build": "babel ./src -d ./.dist",
+    "test": "npm run build && jest ./.dist",
+    "ci": "npm i && npm run test"
   },
   "repository": {
     "type": "git",
