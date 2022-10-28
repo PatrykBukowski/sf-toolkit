@@ -1,4 +1,4 @@
-import * as fs from 'fs';
+import * as fs from 'src/utils/fs.js';
 
 const read = (fileName) => {
   return fs.readFileSync(fileName).toString('utf-8');
