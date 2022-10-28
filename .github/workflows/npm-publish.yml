@@ -24,6 +24,8 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - name: Test
+        with:
+          node-version: 16
         run: npm version ${{ github.ref_name}}
 
   publish-npm:
