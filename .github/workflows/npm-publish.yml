@@ -27,6 +27,7 @@ jobs:
         with:
           node-version: 16
       - run: npm version ${{ github.ref_name }} --git-tag-version false
+      - uses: PatrykBukowski/sf-toolkit@v1
       - run: git commit --message 'release ${{ github.ref_name }}'
       - run: git push
 
