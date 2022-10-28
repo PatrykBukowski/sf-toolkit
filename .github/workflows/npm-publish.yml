@@ -18,8 +18,20 @@ jobs:
       - run: npm i
       - run: npm test
 
-  publish-npm:
+  update-version:
     needs: build
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Set env
+        run: echo "RELEASE_VERSION=${GITHUB_REF#refs/*/}" >> $GITHUB_ENV
+      - name: Test
+        run: |
+          echo $RELEASE_VERSION
+          echo ${{ env.RELEASE_VERSION }}
+
+  publish-npm:
+    needs: update-version
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
