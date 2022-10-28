@@ -26,7 +26,9 @@ jobs:
       - uses: actions/setup-node@v3
         with:
           node-version: 16
-      - run: npm version ${{ github.ref_name}}
+      - run: npm version ${{ github.ref_name }} --git-tag-version false
+      - run: git commit --message 'release ${{ github.ref_name }}'
+      - run: git push
 
   publish-npm:
     needs: update-version

@@ -17,6 +17,7 @@
   "scripts": {
     "build": "babel ./src -d ./.dist",
     "test": "npm run build && jest ./.dist"
+
   },
   "repository": {
     "type": "git",
