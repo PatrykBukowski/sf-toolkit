@@ -18,7 +18,7 @@
     "build": "babel ./src -d ./.dist",
     "test": "npm run build && jest ./.dist",
     "prepare": "husky install",
-    "prettier": "prettier --write --ignore-unknown"
+    "prettier": "prettier --write --ignore-unknown ./**"
   },
   "repository": {
     "type": "git",
